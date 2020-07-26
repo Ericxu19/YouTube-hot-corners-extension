@@ -62,10 +62,6 @@ function check() {
       overlay.style.padding = '0px';
       overlay.style.position = 'absolute';
       overlay.style.zIndex = '10';
-      overlay.innerHTML = "";
-      overlay.style.color = "#B0B0B0";
-      overlay.style.backgroundColor = "#000000";
-      overlay.style.fontSize = "24px";
       overlay.style.cursor = "pointer";
       var w = vidWNum * (portion-1);
 
@@ -82,13 +78,7 @@ function check() {
       overlayBack.style.padding = '0px';
       overlayBack.style.position = 'absolute';
       overlayBack.style.zIndex = '10';
-      overlayBack.innerHTML = "";
-      overlayBack.style.color = "#B0B0B0";
-      overlayBack.style.backgroundColor = "#000000";
-      overlayBack.style.fontSize = "24px";
       overlayBack.style.cursor = "pointer";
-
-
       overlayBack.style.left = "0px";
       overlayBack.style.top = "0px";
       overlayBack.style.opacity = "0.0";
@@ -102,14 +92,7 @@ function check() {
       overlaySkip.style.padding = '0px';
       overlaySkip.style.position = 'absolute';
       overlaySkip.style.zIndex = '11';
-      overlaySkip.innerHTML = "";
-      overlaySkip.style.color = "#B0B0B0";
-      overlaySkip.style.backgroundColor = "#000000";
-      overlaySkip.style.fontSize = "24px";
       overlaySkip.style.cursor = "pointer";
-
-
-
       overlaySkip.style.left = w + "px";
       overlaySkip.style.top = "0px";
       overlaySkip.style.opacity = "0.0";
