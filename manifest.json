@@ -22,5 +22,5 @@
    "name": "YouTube hot corners",
    "options_page": "options.html",
    "permissions": [ "activeTab", "https://www.youtube.com/", "https://www.youtube.com/*" ],
-   "version": "0.0.3"
+   "version": "0.0.4"
 }

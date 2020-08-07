@@ -39,8 +39,8 @@ function check() {
       var vidHNum = vidH.substring(0, vidH.length - 2);
       vidHNum -= 60
 
-      if (document.getElementById("forward") != null) {
-        var overlay = document.getElementById("forward");
+      if (document.getElementById("forwardd") != null) {
+        var overlay = document.getElementById("forwardd");
       } else {
         var overlay = document.createElement('BUTTON');
       }
@@ -51,12 +51,12 @@ function check() {
         var overlayBack = document.createElement('BUTTON');
       }
 
-      if (document.getElementById("skip") != null) {
-        var overlaySkip = document.getElementById("skip");
+      if (document.getElementById("skipa") != null) {
+        var overlaySkip = document.getElementById("skipa");
       } else {
         var overlaySkip = document.createElement('BUTTON');
       }
-      overlay.id = 'forward';
+      overlay.id = 'forwardd';
       overlay.style.border = 'none';
       overlay.style.display = 'block';
       overlay.style.padding = '0px';
@@ -86,7 +86,7 @@ function check() {
       overlayBack.style.width = vidWNum + "px";
 
 
-      overlaySkip.id = 'skip';
+      overlaySkip.id = 'skipa';
       overlaySkip.style.border = 'none';
       overlaySkip.style.display = 'block';
       overlaySkip.style.padding = '0px';
@@ -206,13 +206,13 @@ function check() {
       //didn't find video
       state = 3;
       //alert("else loop ran");
-      if (document.getElementById("forward") != null) {
-        var overlay = document.getElementById("forward");
+      if (document.getElementById("forwardd") != null) {
+        var overlay = document.getElementById("forwardd");
         overlay.style.width = "0px";
 
       }
-      if (document.getElementById("skip") != null) {
-        var overlaySkip = document.getElementById("skip");
+      if (document.getElementById("skipa") != null) {
+        var overlaySkip = document.getElementById("skipa");
         overlaySkip.style.width = "0px";
 
       }
