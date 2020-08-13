@@ -3,10 +3,13 @@
 
 
 chrome.runtime.onMessage.addListener(
-  function (request, sender, sendResponse) {
+  function (_request, _sender, _sendResponse) {
     checkRepeat();
   });
 
+document.addEventListener('visibilitychange', function(){
+  checkRepeat(); // change tab text for demo
+})
 
 //0 untouched, 1 one function ran, 2 the function choose not to run
 var state = 0;
@@ -99,6 +102,7 @@ function check() {
       overlaySkip.style.height = vidHNum / 2 + "px";
       overlaySkip.style.width = vidWNum + "px";
 
+      //adding the buttons on top of the movie player.
       var container = document.getElementById("movie_player")
       container.appendChild(overlay);
       container.appendChild(overlayBack);
@@ -205,7 +209,7 @@ function check() {
     } else {
       //didn't find video
       state = 3;
-      //alert("else loop ran");
+      
       if (document.getElementById("forwardd") != null) {
         var overlay = document.getElementById("forwardd");
         overlay.style.width = "0px";

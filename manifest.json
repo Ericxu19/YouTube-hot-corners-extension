@@ -19,8 +19,8 @@
       "48": "images/ff48.png"
    },
    "manifest_version": 2,
-   "name": "YouTube hot corners",
+   "name": "YouTube On-screen Hotkeys",
    "options_page": "options.html",
    "permissions": [ "activeTab", "https://www.youtube.com/", "https://www.youtube.com/*" ],
-   "version": "0.0.4"
+   "version": "0.0.6"
 }
