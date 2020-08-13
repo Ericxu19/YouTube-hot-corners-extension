@@ -250,6 +250,6 @@ function reload() {
 document.addEventListener('DOMContentLoaded', function () {
   var divs = document.querySelectorAll('#reload');
   for (var i = 0; i < divs.length; i++) {
-    divs[i].addEventListener('click', reload);
+    divs[i].addEventListener('click', reload());
   }
 });
